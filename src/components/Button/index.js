@@ -4,9 +4,9 @@ import AppText from "../AppText";
 import {styles} from "./styles";
 import PropTypes from "prop-types";
 
-const Button = ({label, ...rest}) => {
+const Button = ({label, style, ...rest}) => {
   return (
-    <TouchableOpacity style = {styles.buttonContainer} {...rest}>
+    <TouchableOpacity style = {[styles.buttonContainer, style]} {...rest}>
       <AppText style={styles.buttonLabel}>
         {`${label}`.toUpperCase()}
       </AppText>
