@@ -1,10 +1,10 @@
 import React from 'react';
-import {AuthenticationContainer} from "./src/util/router";
+import {AuthenticationContainer, MainContainer} from "./src/util/router";
 
 
 const App = () => {
   return (
-    <AuthenticationContainer />
+    <MainContainer />
   )
 };
 

@@ -13,9 +13,12 @@ const LIGHT_GREY = '#707070';
 const BLUE = '#31C2F1';
 const ORANGE = '#F7971C';
 const PURPLE = '#65499E';
-const BLUE_OPACITY = 'rgba(49, 194, 241, 0.50)'
+const BLUE_OPACITY = 'rgba(49, 194, 241, 0.50)';
+const NOTIFICATIONS_GREY = '#444444';
+const NOTIFICATIONS_LIGHT_GREY = '#707070';
 
 module.exports = {
+  DEVICE_TYPE: Platform.OS === 'ios',
   SCREEN_SIZE: {
     height,
     width
@@ -35,7 +38,9 @@ module.exports = {
     white: WHITE,
     blueOpacity: BLUE_OPACITY,
     darkGrey: DARK_GREY,
-    lightGrey: LIGHT_GREY
+    lightGrey: LIGHT_GREY,
+    notificationsGrey: NOTIFICATIONS_GREY,
+    notificationsLightGrey: NOTIFICATIONS_LIGHT_GREY,
   },
   COMMON_STYLES: {
     screenContainer: {
