@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import globals from "../../../../../util/globalStyles";
+import globals from "../../../../util/globalStyles";
 
 const images = {};
 

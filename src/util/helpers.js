@@ -1,5 +1,6 @@
 import globalImages from './globalImages';
-import ImagePicker from 'react-native-image-picker';
+import {launchImageLibrary} from 'react-native-image-picker';
+import cloneDeep from 'lodash/cloneDeep';
 
 /**
  * @description Gets icon for specific sport
@@ -31,14 +32,29 @@ export const onPressUploadImage = (setProfileImage) => {
     },
   };
 
-  ImagePicker.showImagePicker(options, (response) => {
+  launchImageLibrary(options, (response) => {
     if (response.didCancel) {
       console.log('Cancelled')
-    } else if (response.error) {
-      console.log('Error: ', response.error)
+    } else if (response.errorCode) {
+      console.log('Error: ', response.errorMessage);
     } else {
-      const source = {uri: response.uri};
-      setProfileImage(source)
+      const source = {uri: response.assets[0].uri};
+      setProfileImage(source);
     }
   });
 };
+/**
+ * @description Deletes item and re-renders components
+ * @param index
+ * @param array
+ * @param setArray
+ */
+export const deleteItem = (index, array, setArray) => {
+  if (index > -1) {
+    array.splice(index, 1);
+  }
+  let newNotifications = cloneDeep(array);
+
+  setArray(newNotifications);
+};
+

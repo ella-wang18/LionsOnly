@@ -15,7 +15,7 @@ const RegistrationView = ({
   setUsername,
   setPassword,
   profileImage,
-  onPressUploadImage
+  onPressUploadImage,
 }) => {
   return (
     <ScreenContainer isScrollable>
@@ -59,7 +59,6 @@ const RegistrationView = ({
       />
       <Button
         label={'JOIN THE DEN'}
-
       />
     </ScreenContainer>
   )

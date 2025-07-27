@@ -7,7 +7,12 @@ import SportsCardDetails from "../../../containers/MainContainer/HomeContainer/S
 
 const HomeStack = createStackNavigator();
 
-const HomeNavigation = () => {
+const HomeNavigation = ({navigation, route}) => {
+  if (route?.state?.index > 0) {
+    navigation.setOptions({tabBarVisible: false});
+  } else {
+    navigation.setOptions({tabBarVisible: true});
+  }
   return (
     <HomeStack.Navigator
       mode="modal"

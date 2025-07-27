@@ -1,7 +1,7 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack'
 
-import AddScreen from "../../../containers/MainContainer/AddContainer/AddScreen";
+import AddScreen from "../../../containers/MainContainer/AddContainer";
 
 const AddStack = createStackNavigator();
 

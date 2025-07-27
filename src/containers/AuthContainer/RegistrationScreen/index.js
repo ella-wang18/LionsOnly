@@ -6,7 +6,6 @@ import {onPressUploadImage} from '../../../util/helpers'
 const RegistrationScreen = () => {
   const [profileImage, setProfileImage] = useState(null);
 
-
   return (
     <RegistrationView
       profileImage={profileImage}
@@ -16,3 +15,4 @@ const RegistrationScreen = () => {
 };
 
 export default RegistrationScreen;
+

@@ -8,8 +8,8 @@ const ICON_DIMENSIONS = width * 0.085;
 
 const BLACK = '#211F21';
 const WHITE = '#FFFFFF';
-const DARK_GREY = '#444444';
-const LIGHT_GREY = '#707070';
+const DARK_GREY = '#707070';
+const LIGHT_GREY = '#E8E8EA';
 const BLUE = '#31C2F1';
 const ORANGE = '#F7971C';
 const PURPLE = '#65499E';

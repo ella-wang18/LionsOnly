@@ -1,7 +1,7 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack'
 
-import ProfileScreen from "../../../containers/MainContainer/ProfileScreen";
+import ProfileScreen from "../../../containers/MainContainer/ProfileContainer";
 
 const ProfileStack = createStackNavigator();
 

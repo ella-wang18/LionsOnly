@@ -10,19 +10,19 @@ const FooterIcon = ({tabBarIndex, isFocused}) => {
     tabBarImage = (isFocused)
       ? images.homeIconOn
       : images.homeIconOff;
-  } else if (parseInt(tabBarIndex) === 0) {
+  } else if (parseInt(tabBarIndex) === 1) {
     tabBarImage = (isFocused)
       ? images.storeIconOn
       : images.storeIconOff;
-  } else if (parseInt(tabBarIndex) === 0) {
+  } else if (parseInt(tabBarIndex) === 2) {
     tabBarImage = (isFocused)
       ? images.addIconOn
       : images.addIconOff;
-  } else if (parseInt(tabBarIndex) === 0) {
+  } else if (parseInt(tabBarIndex) === 3) {
     tabBarImage = (isFocused)
       ? images.notificationsIconOn
       : images.notificationsIconOff;
-  } else if (parseInt(tabBarIndex) === 0) {
+  } else if (parseInt(tabBarIndex) === 4) {
     tabBarImage = (isFocused)
       ? images.profileIconOn
       : images.profileIconOff;

@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Alert} from 'react-native';
 import NotificationsView from './NotificationsView';
 import {notifications} from '../../../util/data';
-import cloneDeep from 'lodash/cloneDeep';
+import {deleteItem} from '../../../util/helpers';
 
 const NotificationScreen = () => {
   const [myNotifications, setMyNotifications] = useState(notifications);
@@ -20,24 +20,12 @@ const NotificationScreen = () => {
         {
           text: 'OK',
           onPress: () => {
-            removeNotification(index);
+            deleteItem(index, myNotifications, setMyNotifications);
           }
         }
       ],
       {cancelable: false}
     );
-  };
-
-  const removeNotification = (index) => {
-    console.log('Index: ', index);
-    if (index > -1) {
-      myNotifications.splice(index, 1);
-    }
-    let newNotifications = cloneDeep(myNotifications);
-
-    console.log('New notifications: ', newNotifications);
-
-    setMyNotifications(newNotifications);
   };
 
   return (

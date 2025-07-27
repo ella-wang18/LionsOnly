@@ -8,9 +8,9 @@ const images = {
   storeIconOff: require('../../assets/images/footer/store-icn-off.png'),
   addIconOn: require('../../assets/images/footer/add-icn-on.png'),
   addIconOff: require('../../assets/images/footer/add-icn-off.png'),
-  notificationsIconOn: require('../../assets/images/footer/notification-icn-off.png'),
+  notificationsIconOn: require('../../assets/images/footer/notification-icn-on.png'),
   notificationsIconOff: require('../../assets/images/footer/notification-icn-off.png'),
-  profileIconOn: require('../../assets/images/footer/profile-icn-off.png'),
+  profileIconOn: require('../../assets/images/footer/profile-icn-on.png'),
   profileIconOff: require('../../assets/images/footer/profile-icn-off.png'),
 };
 

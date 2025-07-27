@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import {View, TouchableOpacity, Image} from 'react-native';
 import globalImages from "../../../../util/globalImages";
 import AppTextInput from "../../../../components/AppTextInput";
@@ -14,7 +14,8 @@ const LoginView = ({
   password,
   setUsername,
   setPassword,
-  goToRegistrationScreen
+  goToRegistrationScreen,
+  enterTheDen,
 }) => {
   return (
     <ScreenContainer>
@@ -35,6 +36,7 @@ const LoginView = ({
 
         <Button
           label={'Enter the den'}
+          onPress={enterTheDen}
         />
         <TouchableOpacity onPress={goToRegistrationScreen}>
           <AppText>New Member?</AppText>

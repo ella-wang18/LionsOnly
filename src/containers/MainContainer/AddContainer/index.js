@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import AddView from './AddView';
-import {onPressUploadImage} from '../../../../util/helpers';
+import {onPressUploadImage} from '../../../util/helpers';
 
 const AddScreen = ({navigation}) => {
   const [description, setDescription] = useState('');

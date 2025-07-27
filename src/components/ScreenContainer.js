@@ -3,9 +3,9 @@ import {View, StatusBar, ScrollView} from 'react-native';
 import globalStyles from '../util/globalStyles';
 import PropTypes from 'prop-types';
 
-const Screen = ({isScrollable, style, children}) => {
+const Screen = ({isScrollable, style, children, ...rest}) => {
   return isScrollable ? (
-    <ScrollView style={style}>
+    <ScrollView showsVerticalScrollIndicator={false} style={style} {...rest}>
       {children}
     </ScrollView>
   ) : (
