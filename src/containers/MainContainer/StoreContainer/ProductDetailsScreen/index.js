@@ -19,7 +19,6 @@ const ProductDetailsScreen = ({navigation, route, addProduct, storeData}) => {
   };
 
   const addToCart = () => {
-    let cartList = storeData;
 
     let cart = {
       image: route.params.primaryImage,
@@ -27,8 +26,7 @@ const ProductDetailsScreen = ({navigation, route, addProduct, storeData}) => {
       price: route.params.price,
       count,
     };
-
-    cartList.push(cart);
+    const cartList = [...storeData, cart];
     addProduct(cartList);
 
     Alert.alert(
