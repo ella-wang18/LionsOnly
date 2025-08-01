@@ -51,7 +51,7 @@ module.exports = {
       paddingLeft: width * 0.03,
       paddingRight: width * 0.03,
       paddingTop: PADDING_TOP,
-      paddingBottom: PADDING_BOTTOM
+      paddingBottom: PADDING_BOTTOM,
     },
     text: {
       color: WHITE,

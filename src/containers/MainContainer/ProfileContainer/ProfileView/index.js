@@ -60,14 +60,12 @@ const ProfileView = ({
           </View>
         </View>
         <View style={styles.editContainer}>
-          <TouchableOpacity OnPress={() => setModalVisible(!modalVisible)}>
+          <TouchableOpacity onPress={() => setModalVisible(!modalVisible)}>
             <AppText>Edit</AppText>
           </TouchableOpacity>
         </View>
       </View>
-      <View
-        style={styles.buttonContainer}
-      >
+      <View style={styles.buttonContainer}>
         <Button
           style={[styles.button, {backgroundColor: globals.COLORS.accent}]}
           label={'POST'}

@@ -48,10 +48,10 @@ const styles = StyleSheet.create({
     height: '100%',
     width: '50%',
   },
-  modalContainer: {flex: 1, backgroundColor: 'rgba(0,0,0,.60'},
+  modalContainer: {flex: 1, backgroundColor: 'rgba(0,0,0,.60)'},
   modalForm: {
     width: '100%',
-    height: globals.SCREEN_SIZE.height * 0.50,
+    height: globals.SCREEN_SIZE.height * 0.50 ,
     backgroundColor: globals.COLORS.backgroundColor,
     position: 'absolute',
     paddingLeft: globals.SCREEN_SIZE.width * 0.03,
