@@ -14,7 +14,7 @@ const NotificationsView = ({
   return (
     <ScreenContainer>
       <HeaderContainer>
-        <AppText>Notifications</AppText>
+        <AppText></AppText>
       </HeaderContainer>
       <FlatList
         data={data}

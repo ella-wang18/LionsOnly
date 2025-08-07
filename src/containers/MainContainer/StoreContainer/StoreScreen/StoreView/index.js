@@ -22,7 +22,7 @@ const StoreView = ({
       contentContainerStyle={{paddingBottom: globals.SCREEN_SIZE.height * 0.1}}
     >
       <HeaderContainer style={styles.headerStyle}>
-        <AppText>Store</AppText>
+        <AppText></AppText>
         <TouchableOpacity onPress={goToShoppingCart}>
           <Image source={images.shoppingCart} />
           {(numberOfItemsInCart !== undefined && numberOfItemsInCart !== '0') && (

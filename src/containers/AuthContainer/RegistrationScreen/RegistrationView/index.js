@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, Image} from 'react-native';
+import {View, Text, Image, TouchableOpacity} from 'react-native';
 import ScreenContainer from "../../../../components/ScreenContainer";
 import globals from "../../../../util/globalStyles";
 import globalImages from "../../../../util/globalImages";
@@ -8,6 +8,7 @@ import AppTextInput from "../../../../components/AppTextInput";
 import Button from "../../../../components/Button";
 import PropTypes from "prop-types";
 import {styles} from "./styles";
+import {images} from "../../../MainContainer/HomeContainer/SportCardDetailsScreen/SportCardDetailsView/styles";
 
 const RegistrationView = ({
   setFirstName,
@@ -16,14 +17,22 @@ const RegistrationView = ({
   setPassword,
   profileImage,
   onPressUploadImage,
+  enterTheDen,
+  goBack,
 }) => {
   return (
     <ScreenContainer isScrollable>
       <HeaderContainer>
-        <Image
-          source={globalImages.backIcon}
-          style={globals.COMMON_STYLES.icon}
-        />
+        <View>
+          <TouchableOpacity onPress={goBack}>
+            <Image source={globalImages.backIcon} style={globals.COMMON_STYLES.icon}/>
+          </TouchableOpacity>
+        </View>
+        {/*<Image*/}
+        {/*  source={globalImages.backIcon}*/}
+        {/*  style={globals.COMMON_STYLES.icon}*/}
+        {/*  onPress={goBack}*/}
+        {/*/>*/}
       </HeaderContainer>
       {profileImage && (
         <View style={styles.profileImageContainer}>
@@ -59,6 +68,7 @@ const RegistrationView = ({
       />
       <Button
         label={'JOIN THE DEN'}
+        onPress={enterTheDen}
       />
     </ScreenContainer>
   )
@@ -69,6 +79,8 @@ RegistrationView.propTypes = {
   setLastName: PropTypes.func,
   setUsername: PropTypes.func,
   setPassword: PropTypes.func,
+  enterTheDen: PropTypes.func,
+  goBack: PropTypes.func,
 };
 
 export default RegistrationView;

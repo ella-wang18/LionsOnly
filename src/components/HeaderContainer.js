@@ -16,9 +16,8 @@ const styles = StyleSheet.create({
     height: globals.SCREEN_SIZE.width * 0.15,
     width: '100%',
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'flex-end',
     marginBottom: 20,
-    justifyContent: 'center',
   }
 })
 

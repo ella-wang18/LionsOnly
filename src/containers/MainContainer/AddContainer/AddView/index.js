@@ -20,7 +20,7 @@ const AddView = ({
         contentContainerStyle={styles.scrollView}
       >
         <HeaderContainer style={styles.header}>
-          <AppText>Add Post</AppText>
+          <AppText></AppText>
         </HeaderContainer>
         {image?.uri && (
           <Image
